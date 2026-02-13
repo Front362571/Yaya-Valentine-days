@@ -52,7 +52,7 @@ function startGame() {
     // Disable start button
     const startBtn = document.getElementById('startBtn');
     startBtn.disabled = true;
-    startBtn.textContent = 'Game Sedang Berjalan...';
+    startBtn.textContent = 'Yaya Sedang tankep hati...';
 
     // Start spawning hearts
     gameInterval = setInterval(spawnHeart, 800);
@@ -149,13 +149,13 @@ function endGame() {
     // Generate love message based on score
     let message = '';
     if (score >= 50) {
-        message = '💖 WOW! Kamu luar biasa sayang! Cintamu sangat besar! 💖';
+        message = '💖 Wih 50 score jadi jungler aja sayang keren banget yaya! 💖';
     } else if (score >= 30) {
-        message = '💕 Hebat! Kamu menangkap banyak cinta! 💕';
+        message = '💕 Keren banget Yaya Jago si! 💕';
     } else if (score >= 15) {
-        message = '💗 Bagus sayang! Cintaku terasa! 💗';
+        message = '💗 Keren banget cintaku satu ini yaya the best! 💗';
     } else {
-        message = '💝 Tidak masalah, yang penting kita bersama! 💝';
+        message = '💝 Gapapa score 0 yang penting dapat apis 💝';
     }
     
     document.getElementById('loveMessage').textContent = message;
